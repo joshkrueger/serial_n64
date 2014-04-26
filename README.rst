@@ -1,19 +1,14 @@
 ==================================
-Wii to Nintendo 64 Adapter
+Arduino to Nintendo 64 Adapter
 ==================================
 
-I wanted to do something with arduino and one friend suggested the
-posibility of play with n64 using wiimote
-
-The project is based on Gamecube-N64-Controller (I forked it). You can
-find technical details there
 
 Materials
 =========
 
 * Nintendo 64
 
-* Computer and bluetooth support
+* Computer
 
 * An Arduino. I used the UNO with an AtMega328 running at 16MHz. A
   different chip may have different timings, and a different speed will most
@@ -44,11 +39,6 @@ the wire colors match the pin-out before you connect them up.
     Figure 1: Pin numbers for an N64 plug (left) and a Gamecube socket (right).
     Credit to this diagram goes to the `Cube64 project`_.
 
-Connect Wiimote
--------------------------------------------------
-You can use any software but I have used CWiid
-On Linux, just type sudo aptitude install libcwiid
-
 Compiling the Code
 ------------------
 ``wii_n64.pde`` provided is the entire source. You can open it with the
@@ -64,11 +54,6 @@ before the N64 is turned on**. Then turn the N64 on and it should be good to go.
 If you turn the N64 off to e.g. load a new game, you'll need to reset the
 Arduino. Just hit the reset button when the N64 is off before you turn it back
 on.
-
-Customization
-=============
-An example for Zelda Ocarina of time is provided. It is minimal and dirty 
-script in python so you can use for build yours own script
 
 Data Enconding
 ==============
